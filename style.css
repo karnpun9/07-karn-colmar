@@ -13,3 +13,187 @@
     font-family: "Montserrat", "Open Sans";
     color: var(--dark-grey);
 }
+h1, h2, h3{
+    color: var(--dark-grey);
+}
+p{
+    font-size: 20px;
+}
+
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+    height: 64px;
+    background-color: var(--white);
+}
+.logo{
+    display: flex;
+    align-items: center;
+    font-family: "Open Sans";
+    /* font-size: 32px; */
+    height: 32px;
+}
+.logo img{
+    height: auto;
+}
+.menu{
+    display: flex;
+}
+.menu li{
+    list-style: none;
+}
+.menu li a{
+    padding-right: 16px;
+    text-decoration: none;
+    font-family: "Montserrat" ;
+    color: var(--dark-grey);
+}
+#nav-mobile{
+    display: none;
+}
+/* end nav bar  */
+
+#hero{
+    background-color: var(--light-grey);
+    display: flex;
+}
+.hero-left img{
+    margin: 32px 24px;
+    width: 60vw;
+}
+.hero-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 24px;
+    width: 40vw;
+}
+
+.hero-right h1 {
+    margin-bottom: 16px; 
+    font-size: 52px; 
+    font-weight: 800;
+
+}
+
+.hero-right p {
+    margin-bottom: 24px; 
+    font-size: 28px;
+    font-weight: 500;
+}
+
+button {
+    width: 100%;
+    background-color: var(--dark-grey);
+    color: var(--white);
+    text-decoration: none;
+    text-align: center;
+    padding: 8px 0;
+    transition: .3s;
+    border: none;
+}
+button:hover{
+    background-color: var(--hover-grey);
+}
+/* end hero  */
+
+#information{
+    display: flex;
+}
+h1.special{
+    display: none;
+}
+
+.info-left{
+    display: flex;
+    flex-direction: column;
+    width: 60vw;
+    padding: 32px 24px;
+    
+}
+.info-left img{
+    width: 100%;
+}
+.info-left h1{
+    margin: 32px 0 24px 0;
+    font-size: 52px;
+}
+.emanuel{
+    padding-top: 32px;
+}
+.info-right{
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+    margin: 32px 0;
+}
+.orient-mobile-img, .campus-mobile-img, .guest-mobile-img{
+    display: none;
+}
+.orient-item, .campus-item, .guest-item{
+    display: flex;
+    align-items: center;
+    transition: .3s;
+}
+.orient-item:hover, .campus-item:hover, .guest-item:hover{
+    background-color: var(--hover-grey);
+}
+
+.orient-desktop-img, .campus-desktop-img, .guest-desktop-img{
+    width: 35vw;
+    height: auto;
+    padding: 16px 16px;
+}
+.orient-desktop-img{
+    padding-top: 0;
+}
+.orient-text, .campus-text, .guest-text{
+    width: 65vw;
+}
+.info-right *> p{
+    padding: 8px 0;
+}
+.info-right *> a{
+    text-decoration: none;
+    color: rgb(0, 170, 255);
+}
+/* end information  */
+
+#course {
+    max-width: 100%;
+    padding: 32px 72px;
+    background-color: var(--light-grey);
+}
+#course h1{
+    text-align: center;
+    font-size: 52px;
+}
+.course-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    padding: 32px 0;
+    gap: 32px 32px;
+}
+.item{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--white);
+    transition: .3s;
+}
+.item:hover{
+    background-color: var(--hover-grey);
+    transform: translateY(2px);
+    box-shadow: 3px 3px 15px rgb(0, 0, 0, 0.2);
+}
+.software-text, .computer-text, .design-text, .data-text, .business-text, .marketing-text{
+    padding: 16px 16px 24px 16px;
+}
+.uppercase{
+    padding: 8px 0;
+}
+#course-mobile{
+    display: none;
+}
+/* end course  */
